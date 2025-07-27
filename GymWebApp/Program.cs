@@ -1,5 +1,8 @@
 using GymWebApp.Data;
+using GymWebApp.Data.Seeders;
 using GymWebApp.Models;
+using GymWebApp.Services;
+using GymWebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,21 +22,31 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.S
     .AddDefaultUI();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IOfferService, OfferService>();
 
 var app = builder.Build();
-var scope = app.Services.CreateScope();
-var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-string[] roles = new[] { "Admin", "User", "Guest" };
-
-foreach (var role in roles)
+using (var scope = app.Services.CreateScope())
 {
-    var roleExists = await roleManager.RoleExistsAsync(role);
-    if (!roleExists)
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+    string[] roles = new[] { "Admin", "User", "Guest" };
+    foreach (var role in roles)
     {
-        await roleManager.CreateAsync(new IdentityRole(role));
+        var roleExists = await roleManager.RoleExistsAsync(role);
+        if (!roleExists)
+        {
+            await roleManager.CreateAsync(new IdentityRole(role));
+        }
     }
+
+    
+    OfferSeeder.Seed(context);
+    TrainerSeeder.Seed(context);
+    TrainingSeeder.Seed(context);
 }
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -46,6 +59,8 @@ else
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
 
 app.UseHttpsRedirection();
 app.UseRouting();

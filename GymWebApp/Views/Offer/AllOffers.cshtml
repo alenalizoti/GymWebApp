@@ -1,0 +1,24 @@
+﻿@model List<GymWebApp.Models.Offer>
+@{
+    ViewData["title"] = "Sve ponude";
+}
+
+
+<div class="container">
+    <h1 class="text-center mt-2 mb-4">Sve ponude</h1>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-outline-primary mb-4" asp-controller="Offer" asp-action="Index">Specijalne ponude</a>
+    </div>
+    <div class="row column-gap-sm-5 row-gap-5">
+        @foreach (var o in Model)
+        {
+            <div class="card col-md-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@o.title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@((o.is_highlighted) ? "Special" : "Standard")</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

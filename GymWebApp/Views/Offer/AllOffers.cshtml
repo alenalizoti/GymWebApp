@@ -1,24 +1,63 @@
-﻿@model List<GymWebApp.Models.Offer>
-@{
-    ViewData["title"] = "Sve ponude";
-}
-
+﻿@model GymWebApp.Models.ViewModel.OfferFilterViewModel
 
 <div class="container">
     <h1 class="text-center mt-2 mb-4">Sve ponude</h1>
-    <div class="d-flex justify-content-center">
-        <a class="btn btn-outline-primary mb-4" asp-controller="Offer" asp-action="Index">Specijalne ponude</a>
-    </div>
-    <div class="row column-gap-sm-5 row-gap-5">
-        @foreach (var o in Model)
-        {
-            <div class="card col-md-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">@o.title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">@((o.is_highlighted) ? "Special" : "Standard")</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+
+    <form asp-action="Index" method="get" class="d-flex justify-content-center mb-4">
+        <select name="filterType" class="form-select w-auto me-2">
+           <option value="" selected="@(string.IsNullOrEmpty(Model.FilterType) ? "selected" : null)">Sve ponude</option>
+            <option value="Special" selected="@(Model.FilterType == "Special" ? "selected" : null)">Samo specijalne</option>
+            <option value="Standard" selected="@(Model.FilterType == "Standard" ? "selected" : null)">Samo standardne</option>
+        </select>
+
+       <select name="sortOrder" class="form-select w-auto me-2">
+            <option value="" selected="@(string.IsNullOrEmpty(Model.SortOrder) ? "selected" : null)">Sortiraj po datumu</option>
+            <option value="title_asc" selected="@(Model.SortOrder == "title_asc" ? "selected" : null)">Naziv A-Z</option>
+            <option value="title_desc" selected="@(Model.SortOrder == "title_desc" ? "selected" : null)">Naziv Z-A</option>
+        </select>
+
+
+
+        <button type="submit" class="btn btn-primary">Primeni</button>
+    </form>
+
+    @if (Model?.PagedOffers?.Items != null && Model.PagedOffers.Items.Any())
+    {
+        <div class="row column-gap-sm-5 row-gap-5">
+            @foreach (var o in Model.PagedOffers.Items)
+            {
+                <div class="card col-md-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@o.title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">
+                            @(o.is_highlighted ? "Special" : "Standard")
+                        </h6>
+                        <p class="card-text">@o.description</p>
+                    </div>
                 </div>
-            </div>
-        }
-    </div>
+            }
+        </div>
+
+        <!-- Paginacija -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-4">
+                @for (int i = 1; i <= Model.PagedOffers.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PagedOffers.PageNumber ? "active" : "")">
+                        <a class="page-link"
+                           asp-action="Index"
+                           asp-route-pageNumber="@i"
+                           asp-route-sortOrder="@Model.SortOrder"
+                           asp-route-filterType="@Model.FilterType">
+                            @i
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+    else
+    {
+        <p class="text-center text-muted mt-4">Trenutno nema ponuda za prikaz.</p>
+    }
 </div>

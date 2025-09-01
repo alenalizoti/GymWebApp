@@ -1,4 +1,5 @@
 ﻿using GymWebApp.Data;
+using GymWebApp.Models.ViewModel;
 using GymWebApp.Services;
 using GymWebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -16,20 +17,27 @@ namespace GymWebApp.Controllers
         }
 
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1, string? sortOrder = null, string? filterType = null)
         {
-            var offers = await _offerService.GetSepcialOfferListAsync();
-            if(offers.Any())
+            int pageSize = 8; 
+
+            var pagedOffers = await _offerService.GetPagedOffersAsync(pageNumber, pageSize, sortOrder, filterType);
+
+            var viewModel = new OfferFilterViewModel
             {
-                return View(offers);
-            }
-            return NotFound();
+                PagedOffers = pagedOffers,
+                SortOrder = sortOrder,
+                FilterType = filterType
+            };
+
+            return View("AllOffers", viewModel);
         }
+
 
         public async Task<IActionResult> AllOffers()
         {
-            var offers = await _offerService.GetOffersToListAsync();
-            if(offers.Any() )
+            var offers = await _offerService.GetSepcialOfferListAsync();
+            if (offers.Any())
             {
                 return View(offers);
             }

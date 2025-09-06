@@ -1,5 +1,10 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\trainers\ana.jpg
+wwwroot\images\trainers\ivan.jpg
+wwwroot\images\trainers\jovana.jpg
+wwwroot\images\trainers\marko.jpg
+wwwroot\images\trainers\nikola.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

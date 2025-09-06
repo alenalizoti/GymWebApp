@@ -1,0 +1,24 @@
+﻿@model List<GymWebApp.Models.Trainer>
+@{
+    ViewData["Title"] = "Trainers";
+}
+
+<h1 class="text-center mt-3 mb-4">Trainers</h1>
+<div class="row">
+    @foreach (var trainer in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="@Url.Content(trainer.image_url)"
+                     class="card-img-top img-fluid"
+                     alt="@($"{trainer.firstName} {trainer.lastName}")" />
+                <div class="card-body">
+                    <a asp-action="Details" asp-route-id="@trainer.trainerId">
+                        <h5 class="card-title">@trainer.firstName @trainer.lastName</h5>
+                    </a>
+                    <p class="card-text">@trainer.description</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

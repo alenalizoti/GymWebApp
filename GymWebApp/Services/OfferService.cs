@@ -16,10 +16,6 @@ namespace GymWebApp.Services
         }
 
 
-        public async Task<List<Offer>> GetSepcialOfferListAsync()
-        {
-            return await _context.Offers.Where(o => o.is_highlighted).ToListAsync();
-        }
 
         public async Task<PageResult<Offer>> GetPagedOffersAsync(int pageNumber, int pageSize, string? sortOrder = null, string? filterType = null)
         {
@@ -52,6 +48,11 @@ namespace GymWebApp.Services
                 PageSize = pageSize,
                 TotalItems = totalItems
             };
+        }
+
+        public async Task<List<Trainer>> GetTrainersAsync()
+        {
+            return await _context.Trainers.ToListAsync();
         }
 
     }

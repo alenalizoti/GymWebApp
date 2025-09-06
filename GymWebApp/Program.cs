@@ -23,6 +23,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.S
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IOfferService, OfferService>();
+builder.Services.AddScoped<ITrainerService, TrainerService>();
+
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

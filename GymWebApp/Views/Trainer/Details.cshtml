@@ -1,0 +1,31 @@
+﻿@model GymWebApp.Models.Trainer
+@{
+    ViewData["Title"] = "Trainer";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <img src="@Url.Content(Model.image_url)" class="img-fluid rounded-circle" alt="@($"{Model.firstName} {Model.lastName}")" />
+        </div>
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">@Model.firstName @Model.lastName</h2>
+                    <h5 class="card-subtitle mb-2 text-muted">Personal Trainer</h5>
+                    <p class="card-text">@Model.description</p>
+                    <hr />
+                    <p><strong>Created at:</strong> @Model.Created_at.ToString("dd.MM.yyyy")</p>
+                    @if (Model.Updated_at.HasValue)
+                    {
+                        <p><strong>Last updated:</strong> @Model.Updated_at.Value.ToString("dd.MM.yyyy")</p>
+                    }
+                    else
+                    {
+                        <p><strong>Last updated:</strong> Not updated yet</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+﻿@model GymWebApp.Models.Review
+@{
+    ViewData["Title"] = "Review trainer";
+}
+
+<div class="container mt-5">
+    <h2>Add a Review</h2>
+
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label for="TrainerId" class="form-label">Select Trainer</label>
+            <select asp-for="TrainerId" class="form-select" asp-items="@(new SelectList(ViewBag.Trainers, "trainerId", "firstName"))">
+                <option value="">-- Choose a trainer --</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Rate" class="form-label"></label>
+            <input asp-for="Rate" class="form-control" type="number" min="1" max="5" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+    </form>
+</div>

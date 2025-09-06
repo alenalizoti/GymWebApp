@@ -34,14 +34,5 @@ namespace GymWebApp.Controllers
         }
 
 
-        public async Task<IActionResult> AllOffers()
-        {
-            var offers = await _offerService.GetSepcialOfferListAsync();
-            if (offers.Any())
-            {
-                return View(offers);
-            }
-            return NotFound();
-        }
     }
 }

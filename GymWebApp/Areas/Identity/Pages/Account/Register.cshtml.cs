@@ -26,6 +26,7 @@ namespace GymWebApp.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManagaer;
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
@@ -33,6 +34,7 @@ namespace GymWebApp.Areas.Identity.Pages.Account
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManagaer,
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
@@ -44,6 +46,7 @@ namespace GymWebApp.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManagaer = roleManagaer;
         }
 
         /// <summary>
@@ -128,6 +131,12 @@ namespace GymWebApp.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+
+                    if (!await _roleManagaer.RoleExistsAsync("User"))
+                    {
+                        await _roleManagaer.CreateAsync(new IdentityRole("User"));
+                    }
+                    await _userManager.AddToRoleAsync(user, "User");
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

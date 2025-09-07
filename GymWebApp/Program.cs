@@ -24,6 +24,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IOfferService, OfferService>();
 builder.Services.AddScoped<ITrainerService, TrainerService>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddControllersWithViews(); 
+builder.Services.AddRazorPages();
 
 
 var app = builder.Build();

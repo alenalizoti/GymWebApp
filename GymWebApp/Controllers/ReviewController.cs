@@ -1,6 +1,8 @@
 ﻿using GymWebApp.Models;
+using GymWebApp.Models.ViewModel;
 using GymWebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Security.Claims;
@@ -13,12 +15,13 @@ namespace GymWebApp.Controllers
     {
         private readonly IReviewService _reviewService;
         private readonly ITrainerService _trainerService;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-
-        public ReviewController(IReviewService reviewService, ITrainerService trainerService)
+        public ReviewController(IReviewService reviewService, ITrainerService trainerService,UserManager<ApplicationUser> userManager)
         {
             _reviewService = reviewService;
             _trainerService = trainerService;
+            _userManager = userManager;
         }
         public async Task<IActionResult> Create()
         {
@@ -27,30 +30,46 @@ namespace GymWebApp.Controllers
             {
                 return NotFound();
             }
-            ViewBag.Trainers = trainers;
-            return View();
+            var model = new ReviewViewModel
+            {
+                Trainers = trainers.Select(t => new SelectListItem
+                {
+                    Value = t.trainerId.ToString(),
+                    Text = t.firstName
+                }).ToList()
+            };
+            return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Review review)
+        public async Task<IActionResult> Create(ReviewViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null)
+                var userId = _userManager.GetUserId(User);
+                if (userId == null) return Unauthorized();
+
+                var review = new Review
                 {
-                    return Unauthorized();
-                }
+                    TrainerId = model.TrainerId,
+                    Rate = model.Rate,
+                    Description = model.Description,
+                    UserId = userId
+                };
 
-                await _reviewService.AddReviewAsync(review, userId);
-
+                await _reviewService.AddReviewAsync(review);
                 return RedirectToAction("Index", "Home");
             }
 
             var trainers = await _trainerService.GetTrainersAsync();
-            ViewBag.Trainers = new SelectList(trainers, "TrainerId", "FirstName");
-            return View(review);
+            model.Trainers = trainers.Select(t => new SelectListItem
+            {
+                Value = t.trainerId.ToString(),
+                Text = t.firstName
+            }).ToList();
+
+            return View(model);
         }
     }
 }

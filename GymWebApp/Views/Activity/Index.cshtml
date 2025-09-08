@@ -1,0 +1,67 @@
+﻿@model GymWebApp.Models.ViewModel.ActivitiesViewModel
+
+<div class="container py-4">
+    <h2>My Activities</h2>
+    <hr />
+
+    <h4>Reservations</h4>
+    @if (!Model.Reservations.Any())
+    {
+        <p>You have no reservations.</p>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Training</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Reserved At</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var res in Model.Reservations)
+                {
+                    <tr>
+                        <td>@(res.Training?.trainingName ?? "Training deleted")</td>
+                        <td>@(res.Training?.startAt.ToString("dd.MM.yyyy HH:mm") ?? "-")</td>
+                        <td>@res.Status</td>
+                        <td>@res.Created_at.ToString("dd.MM.yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <hr />
+    <h4>My Reviews</h4>
+    @if (!Model.Reviews.Any())
+    {
+        <p>You haven't reviewed any trainer.</p>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Trainer</th>
+                    <th>Rating</th>
+                    <th>Comment</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var review in Model.Reviews)
+                {
+                    <tr>
+                        <td>@(review.Trainer?.firstName + " " + review.Trainer?.lastName ?? "Trainer deleted")</td>
+                        <td>@review.Rate / 10</td>
+                        <td>@review.Description</td>
+                        <td>@review.Created_at.ToString("dd.MM.yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

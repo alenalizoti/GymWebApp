@@ -1,11 +1,17 @@
 ﻿@model GymWebApp.Models.ViewModel.ReviewViewModel
-
 @{
     ViewData["Title"] = "Review Trainer";
 }
 
-<h2 class="text-center mt-3">Add a Review</h2>
 
+<h2 class="text-center mt-3 mb-2">Add a Review</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
 <form asp-action="Create" method="post">
     @Html.AntiForgeryToken()
 

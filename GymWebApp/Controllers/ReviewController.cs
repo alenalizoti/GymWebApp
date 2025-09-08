@@ -59,7 +59,8 @@ namespace GymWebApp.Controllers
                 };
 
                 await _reviewService.AddReviewAsync(review);
-                return RedirectToAction("Index", "Home");
+                TempData["SuccessMessage"] = "Review successfully saved!";
+                return RedirectToAction("Create");
             }
 
             var trainers = await _trainerService.GetTrainersAsync();

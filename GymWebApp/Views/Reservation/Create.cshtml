@@ -1,0 +1,34 @@
+﻿@model GymWebApp.Models.ViewModel.ReservationViewModel
+@{
+    ViewData["Title"] = "Book a Training";
+}
+
+<div class="container py-4">
+    <h2>Book Training</h2>
+ 
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">@Model.TrainingName</h5>
+            <p class="card-text">
+                <strong>Description:</strong> @Model.TrainingDescription <br />
+                <strong>Date:</strong> @Model.StartAt.ToString("dd.MM.yyyy HH:mm") <br />
+                <strong>Duration:</strong> @Model.Duration min <br />
+                <strong>Trainers:</strong>
+                @if (Model.Trainers.Any())
+                {
+                    @string.Join(", ", Model.Trainers.Select(t => t.firstName + " " + t.lastName))
+                }
+                else
+                {
+                    <span>No trainers assigned</span>
+                }
+            </p>
+        </div>
+    </div>
+
+    <form asp-action="Create" method="post">
+        <input type="hidden" asp-for="TrainingId" />
+        <button type="submit" class="btn btn-primary">Confirm Reservation</button>
+        <a asp-controller="Training" asp-action="Index" class="btn btn-secondary">Back</a>
+    </form>
+</div>

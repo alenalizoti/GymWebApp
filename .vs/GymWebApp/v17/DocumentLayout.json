@@ -3,44 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\alena\\Desktop\\GymWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\viewmodel\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\viewmodel\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\review\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\review\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\activity\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\activity\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\viewmodel\\activitiesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\viewmodel\\activitiesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\training\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\training\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\reservation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\reservation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\review\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\review\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\viewmodel\\reservationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\viewmodel\\reservationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\viewmodel\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\viewmodel\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\trainer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\trainer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -71,20 +103,12 @@
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\controllers\\offercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\viewmodel\\offerfilterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,14 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\data\\seeders\\offerseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\data\\seeders\\offerseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\data\\seeders\\trainingseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\data\\seeders\\trainingseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\models\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\models\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\data\\seeders\\trainerseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -137,10 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\gymwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\gymwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|c:\\users\\alena\\desktop\\gymwebapp\\gymwebapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9850040C-FAE5-4FA4-8FE0-1458C1C61404}|GymWebApp\\GymWebApp.csproj|solutionrelative:gymwebapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -150,102 +162,219 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Review.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Models\\Review.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Review.cs",
-              "RelativeToolTip": "GymWebApp\\Models\\Review.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TrainingController.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\TrainingController.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Controllers\\TrainingController.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\TrainingController.cs",
+              "RelativeToolTip": "GymWebApp\\Controllers\\TrainingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T18:14:01.343Z",
-              "IsPinned": true
+              "WhenOpened": "2025-09-08T16:33:14.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GymWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GymWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T16:30:44.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Activity\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymWebApp\\Views\\Activity\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Activity\\Index.cshtml",
+              "RelativeToolTip": "GymWebApp\\Views\\Activity\\Index.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwEAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T16:27:28.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActivityController.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\ActivityController.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Controllers\\ActivityController.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\ActivityController.cs",
+              "RelativeToolTip": "GymWebApp\\Controllers\\ActivityController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T16:24:52.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActivitiesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ActivitiesViewModel.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Models\\ViewModel\\ActivitiesViewModel.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ActivitiesViewModel.cs",
+              "RelativeToolTip": "GymWebApp\\Models\\ViewModel\\ActivitiesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T16:24:11.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Training\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymWebApp\\Views\\Training\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Training\\Index.cshtml",
+              "RelativeToolTip": "GymWebApp\\Views\\Training\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T16:20:58.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Models\\Reservation.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Reservation.cs",
+              "RelativeToolTip": "GymWebApp\\Models\\Reservation.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T16:01:29.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Reservation\\Create.cshtml",
+              "RelativeDocumentMoniker": "GymWebApp\\Views\\Reservation\\Create.cshtml",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Reservation\\Create.cshtml",
+              "RelativeToolTip": "GymWebApp\\Views\\Reservation\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T15:52:00.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReservationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ReservationViewModel.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Models\\ViewModel\\ReservationViewModel.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ReservationViewModel.cs",
+              "RelativeToolTip": "GymWebApp\\Models\\ViewModel\\ReservationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T15:45:03.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "GymWebApp\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAhwC8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T15:36:33.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Services\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\ReservationService.cs",
+              "RelativeToolTip": "GymWebApp\\Services\\ReservationService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T15:35:31.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Controllers\\ReviewController.cs",
               "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\ReviewController.cs",
               "RelativeToolTip": "GymWebApp\\Controllers\\ReviewController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAABsAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwD0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-06T16:33:40.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Review\\Create.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Views\\Review\\Create.cshtml",
               "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Review\\Create.cshtml",
               "RelativeToolTip": "GymWebApp\\Views\\Review\\Create.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-06T16:34:28.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReviewViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
-              "RelativeToolTip": "GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T17:29:47.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\ReviewService.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Services\\ReviewService.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\ReviewService.cs",
-              "RelativeToolTip": "GymWebApp\\Services\\ReviewService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T16:30:52.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Program.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Program.cs",
               "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Program.cs",
               "RelativeToolTip": "GymWebApp\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAQwEAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T15:47:13.919Z",
+              "WhenOpened": "2025-09-08T16:10:21.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\Interfaces\\IReviewService.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Services\\Interfaces\\IReviewService.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\Interfaces\\IReviewService.cs",
-              "RelativeToolTip": "GymWebApp\\Services\\Interfaces\\IReviewService.cs",
+              "DocumentIndex": 12,
+              "Title": "OfferController.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\OfferController.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Controllers\\OfferController.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\OfferController.cs",
+              "RelativeToolTip": "GymWebApp\\Controllers\\OfferController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T12:44:50.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\Interfaces\\IReservationService.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Services\\Interfaces\\IReservationService.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\Interfaces\\IReservationService.cs",
+              "RelativeToolTip": "GymWebApp\\Services\\Interfaces\\IReservationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T16:31:07.937Z",
+              "WhenOpened": "2025-09-08T15:34:32.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "Trainer.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Trainer.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Models\\Trainer.cs",
@@ -253,25 +382,23 @@
               "RelativeToolTip": "GymWebApp\\Models\\Trainer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T17:56:45.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-22T17:56:45.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ITrainerService.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\Interfaces\\ITrainerService.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Services\\Interfaces\\ITrainerService.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\Interfaces\\ITrainerService.cs",
-              "RelativeToolTip": "GymWebApp\\Services\\Interfaces\\ITrainerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "ReviewViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
+              "RelativeDocumentMoniker": "GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
+              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
+              "RelativeToolTip": "GymWebApp\\Models\\ViewModel\\ReviewViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T15:41:38.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T17:29:47.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -279,25 +406,11 @@
               "RelativeToolTip": "GymWebApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAiwGoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T18:10:31.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T18:10:31.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GymWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GymWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T18:18:29.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Trainer\\Index.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Views\\Trainer\\Index.cshtml",
@@ -305,12 +418,11 @@
               "RelativeToolTip": "GymWebApp\\Views\\Trainer\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T15:47:22.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T15:47:22.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Trainer\\Details.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Views\\Trainer\\Details.cshtml",
@@ -318,12 +430,11 @@
               "RelativeToolTip": "GymWebApp\\Views\\Trainer\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T16:12:08.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T16:12:08.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Models\\ApplicationUser.cs",
@@ -331,12 +442,11 @@
               "RelativeToolTip": "GymWebApp\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T17:10:26.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T17:10:26.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "TrainerController.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\TrainerController.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Controllers\\TrainerController.cs",
@@ -348,19 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TrainerService.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\TrainerService.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Services\\TrainerService.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\TrainerService.cs",
-              "RelativeToolTip": "GymWebApp\\Services\\TrainerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T15:41:10.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\appsettings.json",
               "RelativeDocumentMoniker": "GymWebApp\\appsettings.json",
@@ -372,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "OfferService.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Services\\OfferService.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Services\\OfferService.cs",
@@ -384,19 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "OfferController.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\OfferController.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Controllers\\OfferController.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Controllers\\OfferController.cs",
-              "RelativeToolTip": "GymWebApp\\Controllers\\OfferController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T12:44:50.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Offer\\Index.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Views\\Offer\\Index.cshtml",
@@ -408,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "OfferFilterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\OfferFilterViewModel.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Models\\ViewModel\\OfferFilterViewModel.cs",
@@ -420,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "PageResult.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\ViewModel\\PageResult.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Models\\ViewModel\\PageResult.cs",
@@ -432,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "OfferSeeder.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Data\\Seeders\\OfferSeeder.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Data\\Seeders\\OfferSeeder.cs",
@@ -444,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "TrainerSeeder.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Data\\Seeders\\TrainerSeeder.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Data\\Seeders\\TrainerSeeder.cs",
@@ -456,19 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TrainingSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Data\\Seeders\\TrainingSeeder.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Data\\Seeders\\TrainingSeeder.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Data\\Seeders\\TrainingSeeder.cs",
-              "RelativeToolTip": "GymWebApp\\Data\\Seeders\\TrainingSeeder.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwA4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T12:28:18.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
@@ -480,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "Offer.cs",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Offer.cs",
               "RelativeDocumentMoniker": "GymWebApp\\Models\\Offer.cs",
@@ -492,19 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Training.cs",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Training.cs",
-              "RelativeDocumentMoniker": "GymWebApp\\Models\\Training.cs",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Models\\Training.cs",
-              "RelativeToolTip": "GymWebApp\\Models\\Training.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T18:01:00.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Views\\Shared\\_LoginPartial.cshtml",
@@ -516,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "GymWebApp\\ScaffoldingReadMe.txt",
@@ -528,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -540,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
@@ -552,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "GymWebApp.csproj",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\GymWebApp.csproj",
               "RelativeDocumentMoniker": "GymWebApp\\GymWebApp.csproj",
@@ -564,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "GymWebApp\\Views\\Home\\Index.cshtml",
@@ -573,18 +635,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-02T16:11:10.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "GymWebApp\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\alena\\Desktop\\GymWebApp\\GymWebApp\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "GymWebApp\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T16:11:05.538Z"
             }
           ]
         }

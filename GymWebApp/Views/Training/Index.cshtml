@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GymWebApp.Models.Training>
+
+@{
+    ViewData["Title"] = "Book a Training";
+}
+
+<h1 class="text-center mt-3">Book a Training</h1>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+<div class="container py-4">
+    <h2 class="mb-4">All Trainings</h2>
+    <div class="row">
+        @foreach (var training in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@training.trainingName</h5>
+                        <p class="card-text">
+                            <strong>Description:</strong> @training.trainingDescription <br />
+                            <strong>Date:</strong> @training.startAt.ToString("dd.MM.yyyy HH:mm") <br />
+                            <strong>Duration:</strong> @training.duration min <br />
+                            <strong>Capacity:</strong> @training.capacity <br />
+                            <strong>Trainers:</strong>
+                            @if (training.Trainers != null && training.Trainers.Any())
+                            {
+                                <ul>
+                                    @foreach (var trainer in training.Trainers)
+                                    {
+                                        <li>@trainer.firstName @trainer.lastName</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <span>No trainers assigned</span>
+                            }
+                        </p>
+                        <a asp-controller="Reservation" asp-action="Create" asp-route-id="@training.trainingId" class="btn btn-primary">
+                            Book
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

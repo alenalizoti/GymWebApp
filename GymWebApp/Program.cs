@@ -25,6 +25,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddScoped<IOfferService, OfferService>();
 builder.Services.AddScoped<ITrainerService, TrainerService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<ITrainingService, TrainingService>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
 builder.Services.AddControllersWithViews(); 
 builder.Services.AddRazorPages();
 
@@ -77,7 +79,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Offer}/{action=Index}/{id?}")
     .WithStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();

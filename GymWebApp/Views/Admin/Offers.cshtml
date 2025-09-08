@@ -1,0 +1,75 @@
+﻿@model GymWebApp.Models.ViewModel.PageResult<Offer>
+@{
+    ViewData["Title"] = "Offers Management";
+}
+<h2>Offers</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Created</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.title</td>
+                <td>@item.Created_at</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.OfferId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.OfferId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Paginacija -->
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        @if (Model.PageNumber > 1)
+        {
+            <li class="page-item">
+                <a class="page-link"
+                   asp-controller="Admin"
+                   asp-action="Offers"
+                   asp-route-pageNumber="@(Model.PageNumber - 1)">
+                    Previous
+                </a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                <a class="page-link"
+                   asp-controller="Admin"
+                   asp-action="Offers"
+                   asp-route-pageNumber="@i">
+                    @i
+                </a>
+            </li>
+        }
+
+        @if (Model.PageNumber < Model.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link"
+                   asp-controller="Admin"
+                   asp-action="Offers"
+                   asp-route-pageNumber="@(Model.PageNumber + 1)">
+                    Next
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
+
+</nav>

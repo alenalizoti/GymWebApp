@@ -1,0 +1,76 @@
+﻿@model GymWebApp.Models.ViewModel.PageResult<Training>
+@{
+    ViewData["Title"] = "Trainings Management"; 
+}
+<h2>Offers</h2>
+<p>
+    <a asp-controller="Admin" asp-action="CreateTraining" class="btn btn-primary">Create New Training</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Start At</th>
+            <th>Duration (min)</th>
+            <th>Capacity</th>
+            <th>Trainers</th>
+            <th>Created</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.trainingName</td>
+                <td>@item.trainingDescription</td>
+                <td>@item.startAt.ToString("g")</td>
+                <td>@item.duration</td>
+                <td>@item.capacity</td>
+                <td>
+                    @if (item.Trainers != null && item.Trainers.Any())
+                    {
+                        @string.Join(", ", item.Trainers.Select(t => t.firstName + " " + t.lastName))
+                    }
+                    else
+                    {
+                        <span>No trainers assigned</span>
+                    }
+                </td>
+                <td>@item.Created_at.ToString("g")</td>
+                <td>
+                    <a asp-controller="Admin" asp-action="EditTraining" asp-route-id="@item.trainingId">Edit</a> |
+                    <a asp-controller="Admin" asp-action="DeleteTraining" asp-route-id="@item.trainingId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Paginacija -->
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        @if (Model.PageNumber > 1)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-controller="Admin" asp-action="Trainings" asp-route-pageNumber="@(Model.PageNumber - 1)">Previous</a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                <a class="page-link" asp-controller="Admin" asp-action="Trainings" asp-route-pageNumber="@i">@i</a>
+            </li>
+        }
+
+        @if (Model.PageNumber < Model.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-controller="Admin" asp-action="Trainings" asp-route-pageNumber="@(Model.PageNumber + 1)">Next</a>
+            </li>
+        }
+    </ul>
+</nav>

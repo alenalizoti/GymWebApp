@@ -27,6 +27,7 @@ builder.Services.AddScoped<ITrainerService, TrainerService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<ITrainingService, TrainingService>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddControllersWithViews(); 
 builder.Services.AddRazorPages();
 

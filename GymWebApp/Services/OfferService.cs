@@ -55,5 +55,10 @@ namespace GymWebApp.Services
             return await _context.Trainers.ToListAsync();
         }
 
+        public async Task<List<Offer>> GetOffersAsync()
+        {
+            return await _context.Offers.ToListAsync();
+        }
+
     }
 }

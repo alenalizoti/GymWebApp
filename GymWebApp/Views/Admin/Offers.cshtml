@@ -1,30 +1,41 @@
 ﻿@model GymWebApp.Models.ViewModel.PageResult<Offer>
 @{
-    ViewData["Title"] = "Offers Management";
+    ViewData["Title"] = "Offers Management (AJAX)";
 }
 <h2>Offers</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Create New</a>
-</p>
+<button class="btn btn-primary mb-3" id="btnShowCreateModal">Create New</button>
 
-<table class="table">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Title</th>
+            <th>Description</th>
+            <th>Highlighted</th>
             <th>Created</th>
-            <th></th>
+            <th>Actions</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="offersTableBody">
         @foreach (var item in Model.Items)
         {
-            <tr>
-                <td>@item.title</td>
-                <td>@item.Created_at</td>
+            <tr data-id="@item.OfferId">
+                <td class="offer-title">@item.title</td>
+                <td class="offer-description">@item.description</td>
+                <td>@(item.is_highlighted ? "Yes" : "No")</td>
+                <td>@item.Created_at.ToString("yyyy-MM-dd")</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.OfferId">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.OfferId">Delete</a>
+                    <button class="btn btn-sm btn-warning btn-edit"
+                            data-id="@item.OfferId"
+                            data-title="@item.title"
+                            data-description="@item.description"
+                            data-highlighted="@item.is_highlighted">
+                        Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger btn-delete"
+                            data-id="@item.OfferId">
+                        Delete
+                    </button>
                 </td>
             </tr>
         }
@@ -40,9 +51,7 @@
                 <a class="page-link"
                    asp-controller="Admin"
                    asp-action="Offers"
-                   asp-route-pageNumber="@(Model.PageNumber - 1)">
-                    Previous
-                </a>
+                   asp-route-pageNumber="@(Model.PageNumber - 1)">Previous</a>
             </li>
         }
 
@@ -52,9 +61,7 @@
                 <a class="page-link"
                    asp-controller="Admin"
                    asp-action="Offers"
-                   asp-route-pageNumber="@i">
-                    @i
-                </a>
+                   asp-route-pageNumber="@i">@i</a>
             </li>
         }
 
@@ -64,12 +71,166 @@
                 <a class="page-link"
                    asp-controller="Admin"
                    asp-action="Offers"
-                   asp-route-pageNumber="@(Model.PageNumber + 1)">
-                    Next
-                </a>
+                   asp-route-pageNumber="@(Model.PageNumber + 1)">Next</a>
             </li>
         }
     </ul>
 </nav>
 
-</nav>
+
+<!-- Create Modal -->
+<div class="modal fade" id="createModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create Offer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="createOfferForm">
+                    <div class="mb-3">
+                        <label>Title</label>
+                        <input type="text" class="form-control" name="title" required minlength="3" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <textarea class="form-control" name="description" required minlength="10"></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" name="is_highlighted" />
+                        <label class="form-check-label">Highlight this offer</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Offer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editOfferForm">
+                    <input type="hidden" name="OfferId" />
+                    <div class="mb-3">
+                        <label>Title</label>
+                        <input type="text" class="form-control" name="title" required minlength="3" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <textarea class="form-control" name="description" required minlength="10"></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" name="is_highlighted" />
+                        <label class="form-check-label">Highlight this offer</label>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            // Open Create modal
+            $("#btnShowCreateModal").click(function () {
+                $("#createOfferForm")[0].reset();
+                $("#createModal").modal("show");
+            });
+
+            // Create Offer
+            $("#createOfferForm").submit(function (e) {
+                e.preventDefault();
+                const data = {
+                    title: $(this).find("input[name='title']").val(),
+                    description: $(this).find("textarea[name='description']").val(),
+                    is_highlighted: $(this).find("input[name='is_highlighted']").is(":checked")
+                };
+
+                $.ajax({
+                    url: '/Admin/CreateOffer',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    success: function (res) {
+                        if (res.success) {
+                            location.reload();
+                        } else {
+                            alert("Error: " + res.message);
+                        }
+                    }
+                });
+            });
+
+            // Open Edit modal
+            $(".btn-edit").click(function () {
+                const id = $(this).data("id");
+                const title = $(this).data("title");
+                const description = $(this).data("description");
+                const highlighted = $(this).data("highlighted");
+
+                $("#editOfferForm input[name='OfferId']").val(id);
+                $("#editOfferForm input[name='title']").val(title);
+                $("#editOfferForm textarea[name='description']").val(description);
+                $("#editOfferForm input[name='is_highlighted']").prop("checked", highlighted);
+
+                $("#editModal").modal("show");
+            });
+
+            // Update Offer
+            $("#editOfferForm").submit(function (e) {
+                e.preventDefault();
+                const data = {
+                    OfferId: $(this).find("input[name='OfferId']").val(),
+                    title: $(this).find("input[name='title']").val(),
+                    description: $(this).find("textarea[name='description']").val(),
+                    is_highlighted: $(this).find("input[name='is_highlighted']").is(":checked")
+                };
+
+                $.ajax({
+                    url: '/Admin/EditOffer',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    success: function (res) {
+                        if (res.success) {
+                            location.reload();
+                        } else {
+                            alert("Error: " + res.message);
+                        }
+                    }
+                });
+            });
+
+            // Delete Offer
+            $(".btn-delete").click(function () {
+                if (!confirm("Are you sure you want to delete this offer?")) return;
+
+                const id = $(this).data("id");
+
+                $.ajax({
+                    url: '/Admin/DeleteOffer?id=' + id,
+                    type: 'POST',
+                    success: function (res) {
+                        if (res.success) {
+                            $("tr[data-id='" + id + "']").remove();
+                        } else {
+                            alert("Error: " + res.message);
+                        }
+                    }
+                });
+            });
+
+        });
+    </script>
+}

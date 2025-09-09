@@ -1,4 +1,5 @@
-﻿using GymWebApp.Models.ViewModel;
+﻿using GymWebApp.Models;
+using GymWebApp.Models.ViewModel;
 using GymWebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,6 +35,38 @@ namespace GymWebApp.Controllers
 
             return View(pagedOffers);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateOffer([FromBody] Offer offer)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            offer.Created_at = DateTime.UtcNow;
+            await _offerService.CreateOfferAsync(offer);
+
+            return Json(new { success = true, message = "Offer created successfully", offer });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditOffer([FromBody] Offer offer)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            offer.Updated_at = DateTime.UtcNow;
+            await _offerService.UpdateOfferAsync(offer);
+
+            return Json(new { success = true, message = "Offer updated successfully", offer });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteOffer(int id)
+        {
+            await _offerService.DeleteOfferAsync(id);
+            return Json(new { success = true, message = "Offer deleted successfully" });
+        }
+
 
         public async Task<IActionResult> Trainings(int pageNumber = 1)
         {

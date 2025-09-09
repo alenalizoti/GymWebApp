@@ -59,6 +59,34 @@ namespace GymWebApp.Services
         {
             return await _context.Offers.ToListAsync();
         }
+        public async Task CreateOfferAsync(Offer offer)
+        {
+            _context.Offers.Add(offer);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateOfferAsync(Offer offer)
+        {
+            var existingOffer = await _context.Offers.FirstOrDefaultAsync(o => o.OfferId == offer.OfferId);
+            if (existingOffer == null) throw new Exception("Offer not found");
+
+            existingOffer.title = offer.title;
+            existingOffer.description = offer.description;
+            existingOffer.is_highlighted = offer.is_highlighted;
+            existingOffer.Updated_at = offer.Updated_at;
+
+            _context.Offers.Update(existingOffer);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteOfferAsync(int id)
+        {
+            var offer = await _context.Offers.FindAsync(id);
+            if (offer == null) throw new Exception("Offer not found");
+
+            _context.Offers.Remove(offer);
+            await _context.SaveChangesAsync();
+        }
 
     }
 }

@@ -22,6 +22,13 @@ namespace GymWebApp.Services
                 .Include(t => t.Trainers)
                 .ToListAsync();
         }
+        public async Task<Training?> GetTrainingAsync(int id)
+        {
+            return await _context
+                .Trainings
+                .Include(t => t.Trainers)
+                .FirstOrDefaultAsync(tr => tr.trainingId == id);
+        }
         public async Task<PageResult<Training>> GetPagedTrainingsAsync(int pageNumber, int pageSize)
         {
             var query = _context.Trainings
@@ -40,6 +47,27 @@ namespace GymWebApp.Services
                 PageSize = pageSize,
                 TotalItems = totalItems
             };
+        }
+
+        public async Task AddTrainingAsync(Training training)
+        {
+            await _context.Trainings.AddAsync(training);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateTrainingAsync(Training training)
+        {
+            _context.Trainings.Update(training);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteTrainingAsync(int id)
+        {
+            var training = await _context.Trainings.FindAsync(id);
+            if (training != null)
+            {
+                _context.Trainings.Remove(training);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

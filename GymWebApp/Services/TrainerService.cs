@@ -24,6 +24,13 @@ namespace GymWebApp.Services
             var trainer = await _context.Trainers.FindAsync(id);
             return trainer;
         }
+
+        public async Task<IEnumerable<Trainer>> GetTrainersByIdsAsync(IEnumerable<int> ids)
+        {
+            return await _context.Trainers
+                                 .Where(t => ids.Contains(t.trainerId))
+                                 .ToListAsync();
+        }
     }
 }
  

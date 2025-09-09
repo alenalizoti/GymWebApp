@@ -1,0 +1,50 @@
+﻿@model GymWebApp.Models.Training
+@{
+    ViewData["Title"] = "Edit Training";
+}
+
+<h2>Edit Training</h2>
+
+<form asp-action="EditTraining" method="post">
+    <input type="hidden" asp-for="trainingId" />
+
+    <div class="mb-3">
+        <label asp-for="trainingName" class="form-label"></label>
+        <input asp-for="trainingName" class="form-control" />
+        <span asp-validation-for="trainingName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="trainingDescription" class="form-label"></label>
+        <textarea asp-for="trainingDescription" class="form-control"></textarea>
+        <span asp-validation-for="trainingDescription" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="duration" class="form-label"></label>
+        <input asp-for="duration" class="form-control" type="number" step="0.1" />
+        <span asp-validation-for="duration" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="startAt" class="form-label"></label>
+        <input asp-for="startAt" class="form-control" type="datetime-local"
+               value="@Model.startAt.ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="startAt" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="capacity" class="form-label"></label>
+        <input asp-for="capacity" class="form-control" type="number" />
+        <span asp-validation-for="capacity" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Trainings" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

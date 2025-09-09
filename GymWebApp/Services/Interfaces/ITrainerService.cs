@@ -7,5 +7,6 @@ namespace GymWebApp.Services.Interfaces
         Task<List<Trainer>> GetTrainersAsync();
 
         Task<Trainer?> GetTrainerAsync(int id);
+        Task<IEnumerable<Trainer>> GetTrainersByIdsAsync(IEnumerable<int> ids);
     }
 }

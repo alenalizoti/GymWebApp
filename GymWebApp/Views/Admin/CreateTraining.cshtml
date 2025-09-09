@@ -1,0 +1,53 @@
+﻿@model GymWebApp.Models.ViewModel.CreateTrainingViewModel
+@{
+    ViewData["Title"] = "Create Training";
+}
+
+<h2>Create Training</h2>
+
+<form asp-action="CreateTraining" method="post">
+    <div class="mb-3">
+        <label asp-for="TrainingName" class="form-label"></label>
+        <input asp-for="TrainingName" class="form-control" />
+        <span asp-validation-for="TrainingName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TrainingDescription" class="form-label"></label>
+        <textarea asp-for="TrainingDescription" class="form-control"></textarea>
+        <span asp-validation-for="TrainingDescription" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Duration" class="form-label"></label>
+        <input asp-for="Duration" class="form-control" />
+        <span asp-validation-for="Duration" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="StartAt" class="form-label"></label>
+        <input asp-for="StartAt" type="datetime-local" class="form-control" />
+        <span asp-validation-for="StartAt" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Capacity" class="form-label"></label>
+        <input asp-for="Capacity" class="form-control" />
+        <span asp-validation-for="Capacity" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Trainers</label>
+        <select asp-for="SelectedTrainerIds" asp-items="@(new MultiSelectList(Model.AvailableTrainers ?? new List<Trainer>(), "trainerId", "FullName"))" multiple class="form-control">
+        </select>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

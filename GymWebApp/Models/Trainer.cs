@@ -9,6 +9,7 @@ namespace GymWebApp.Models
         public string firstName { get; set; } = string.Empty;
         [Required, MinLength(3), MaxLength(30)]
         public string lastName { get; set; } = string.Empty;
+        public string FullName => firstName + " " + lastName;
         [Required]
         public string image_url { get; set; } = string.Empty;
         [Required, MinLength(10)]

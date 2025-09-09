@@ -1,0 +1,41 @@
+﻿@model List<GymWebApp.Models.Reservation>
+@{
+    ViewData["Title"] = "Manage Reservations";
+}
+
+<h1 class="text-center mt-3">Reservations</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Training</th>
+            <th>Scheduled For</th>
+            <th>Reserved At</th>
+            <th>Status</th>
+            <th colspan="2">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.User?.UserName</td>
+                <td>@reservation.Training?.trainingName</td>
+                <td>@reservation.Training?.startAt.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>@reservation.Created_at.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>@reservation.Status</td>
+                <td>
+                    <form asp-action="ApproveReservation" asp-route-id="@reservation.ReservationId" method="post">
+                        <button type="submit" class="btn btn-primary">Approve</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-action="RejectReservation" asp-route-id="@reservation.ReservationId" method="post">
+                        <button type="submit" class="btn btn-danger">Reject</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

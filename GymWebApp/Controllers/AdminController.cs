@@ -2,24 +2,28 @@
 using GymWebApp.Models.ViewModel;
 using GymWebApp.Services;
 using GymWebApp.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymWebApp.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class AdminController : Controller
     {
         private readonly IAdminService _adminService;
         private readonly IOfferService _offerService;
         private readonly ITrainingService _trainingService;
         private readonly ITrainerService _trainerService;
+        private readonly IReservationService _reservationService;
 
 
-        public AdminController(IAdminService adminService, IOfferService offerService, ITrainingService trainingService, ITrainerService trainerService)
+        public AdminController(IAdminService adminService, IOfferService offerService, ITrainingService trainingService, ITrainerService trainerService, IReservationService reservationService)
         {
             _adminService = adminService;
             _offerService = offerService;
             _trainingService = trainingService;
             _trainerService = trainerService;
+            _reservationService = reservationService;
         }
 
         public async Task<IActionResult> Dashboard()
@@ -194,6 +198,53 @@ namespace GymWebApp.Controllers
                 return Json(new { success = false, message = "An error occurred while deleting the training." });
             }
         }
+
+        public async Task<IActionResult> Reservations()
+        {
+            var reservations = await _reservationService.GetReservationsAsync();
+            if(!reservations.Any())
+            {
+                return NotFound();
+            }   
+
+            return View(reservations);
+        }
+
+        public async Task<IActionResult> ApproveReservation(int id)
+        {
+            var reservation = await _reservationService.GetReservationAsync(id);
+            if(reservation == null)
+            {
+                return NotFound();
+            }
+
+            reservation.Status = Reservation.ReservationStatus.Approved;
+            reservation.Updated_at = DateTime.UtcNow;
+
+            await _reservationService.UpdateReservationAsync(reservation);
+
+            return RedirectToAction("Reservations");
+
+        }
+
+        public async Task<IActionResult> RejectReservation(int id)
+        {
+            var reservation = await _reservationService.GetReservationAsync(id);
+            if (reservation == null)
+            {
+                return NotFound();
+            }
+
+            reservation.Status = Reservation.ReservationStatus.Rejected;
+            reservation.Updated_at = DateTime.UtcNow;
+
+            await _reservationService.UpdateReservationAsync(reservation);
+
+            return RedirectToAction("Reservations");
+
+        }
+
+
 
     }
 }
